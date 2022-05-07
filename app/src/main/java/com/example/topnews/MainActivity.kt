@@ -10,6 +10,8 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavHostController
+import com.example.topnews.ui.NewsApp
 import com.example.topnews.ui.theme.TopNewsTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    Greeting("Android")
+                    NewsApp()
                 }
             }
         }
@@ -38,6 +40,6 @@ fun Greeting(name: String) {
 @Composable
 fun DefaultPreview() {
     TopNewsTheme {
-        Greeting("Android")
+        NewsApp()
     }
 }
